@@ -1,0 +1,124 @@
+/* ==========================================
+        EY LIVE MESSAGES STYLE
+========================================== */
+
+.messagesPage{
+min-height:100vh;
+background:linear-gradient(180deg,#12001f,#22003d,#330066);
+color:#fff;
+font-family:Poppins,sans-serif;
+padding-bottom:90px;
+}
+
+.topBar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(20px);
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.topBar h2{
+font-size:24px;
+}
+
+.newChat{
+width:45px;
+height:45px;
+border-radius:50%;
+background:linear-gradient(135deg,#8a2eff,#ff2ebd);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+cursor:pointer;
+}
+
+.searchBox{
+padding:18px;
+}
+
+.searchBox input{
+width:100%;
+padding:15px;
+border:none;
+outline:none;
+border-radius:18px;
+background:rgba(255,255,255,.08);
+color:#fff;
+font-size:15px;
+}
+
+.chatList{
+padding:15px;
+}
+
+.chatItem{
+display:flex;
+align-items:center;
+gap:15px;
+background:rgba(255,255,255,.08);
+border-radius:20px;
+padding:15px;
+margin-bottom:15px;
+transition:.3s;
+cursor:pointer;
+}
+
+.chatItem:hover{
+transform:translateX(5px);
+background:rgba(255,255,255,.12);
+}
+
+.chatItem img{
+width:60px;
+height:60px;
+border-radius:50%;
+border:3px solid #8a2eff;
+}
+
+.chatInfo{
+flex:1;
+}
+
+.chatInfo h3{
+font-size:17px;
+margin-bottom:5px;
+}
+
+.chatInfo p{
+font-size:13px;
+opacity:.7;
+}
+
+.chatTime{
+font-size:12px;
+opacity:.6;
+}
+
+.bottomNav{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+height:75px;
+display:flex;
+justify-content:space-around;
+align-items:center;
+background:rgba(18,0,31,.95);
+backdrop-filter:blur(20px);
+}
+
+.bottomNav div{
+text-align:center;
+cursor:pointer;
+}
+
+.bottomNav p{
+font-size:12px;
+margin-top:4px;
+}

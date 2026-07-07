@@ -1,0 +1,124 @@
+/* ==========================================
+   EY LIVE V2
+   GAMES PAGE
+========================================== */
+
+.gamesGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+gap:18px;
+
+padding-bottom:100px;
+
+}
+
+.gameCard{
+
+background:linear-gradient(180deg,#1b1233,#28184d);
+
+border-radius:24px;
+
+padding:20px;
+
+text-align:center;
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.05);
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.gameCard:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 40px rgba(123,46,255,.25);
+
+}
+
+.gameIcon{
+
+font-size:60px;
+
+margin-bottom:18px;
+
+}
+
+.gameCard h3{
+
+margin:0;
+
+font-size:22px;
+
+}
+
+.gameCard p{
+
+margin:12px 0 18px;
+
+font-size:14px;
+
+color:#bdbdd8;
+
+}
+
+.gameCard button{
+
+width:100%;
+
+height:48px;
+
+border:none;
+
+border-radius:15px;
+
+background:linear-gradient(135deg,#7B2EFF,#FF2E9E);
+
+color:white;
+
+font-size:15px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.gameCard button:hover{
+
+transform:scale(1.04);
+
+}
+
+.gameCard button:disabled{
+
+background:#555;
+
+cursor:not-allowed;
+
+transform:none;
+
+}
+
+@media(max-width:700px){
+
+.gamesGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.gameIcon{
+
+font-size:52px;
+
+}
+
+}
